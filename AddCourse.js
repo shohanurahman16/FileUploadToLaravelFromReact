@@ -44,7 +44,7 @@ class AddCourse extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    const url = "/api/course/p170815s";
+    const url = "api";
     const formData = { file: this.state.image, title: this.state.title };
     return axios.post(url, formData).then(() => {
       this.setState({
